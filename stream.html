@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify Web Playback SDK Quick Start</title>
+</head>
+<body>
+    <h1>Spotify Web Playback SDK Quick Start</h1>
+    <button id="skipBackward">Skip Backward</button>
+    <button id="togglePlay">Play/Pause</button>
+    <button id="skipForward">Skip Forward</button>
+    <!-- Music timeline input -->
+    <input id="musicTimeline" type="range" min="0" max="100" step="1" value="0"> <br> <br>  
+    <!-- Volume control input -->
+    <label>Adjust Volume</label>
+    <input type="range" id="volumeControl" min="0" max="100" step="1">
+    <button id="loginButton">Connect with Spotify</button>
+    <div id="ready"></div>
+    <!-- Display song information -->
+    <div id="songInfo">
+        <img id="albumImage" src="" alt="Album Image">
+        <div id="songDetails">
+            <p id="songTitle">Song Title</p>
+            <p id="artist">Artist</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://sdk.scdn.co/spotify-player.js"></script>
+    <script src="spotify.js"></script>
+</body>
+</html>
