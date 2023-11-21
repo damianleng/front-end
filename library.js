@@ -1,6 +1,6 @@
 // Replace 'YOUR_ACCESS_TOKEN' with the actual access token obtained from Spotify OAuth
 const clientId = '96cc031004a7414097ce16cec85c07e4';
-const redirectUri = 'http://localhost/front-end/library.html'; // Must be set in your Spotify Developer Dashboard
+const redirectUri = 'http://localhost/spotify/library.html'; // Must be set in your Spotify Developer Dashboard
 const apiUrl = 'https://api.spotify.com/v1/me/playlists';
 
 $(document).ready(function () {

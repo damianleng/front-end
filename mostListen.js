@@ -1,6 +1,6 @@
 // Replace with your actual client ID and redirect URI
 const clientId = '96cc031004a7414097ce16cec85c07e4';
-const redirectUri = 'http://localhost/front-end/mostListen.html';
+const redirectUri = 'http://localhost/spotify/mostListen.html';
 const scopes = 'user-top-read';
 
 function loginToSpotify() {
