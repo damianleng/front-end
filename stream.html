@@ -1,30 +1,86 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Spotify Web Playback SDK Quick Start</title>
-</head>
-<body>
-    <h1>Spotify Web Playback SDK Quick Start</h1>
-    <button id="skipBackward">Skip Backward</button>
-    <button id="togglePlay">Play/Pause</button>
-    <button id="skipForward">Skip Forward</button>
-    <!-- Music timeline input -->
-    <input id="musicTimeline" type="range" min="0" max="100" step="1" value="0"> <br> <br>  
-    <!-- Volume control input -->
-    <label>Adjust Volume</label>
-    <input type="range" id="volumeControl" min="0" max="100" step="1">
-    <button id="loginButton">Connect with Spotify</button>
-    <div id="ready"></div>
-    <!-- Display song information -->
-    <div id="songInfo">
-        <img id="albumImage" src="" alt="Album Image">
-        <div id="songDetails">
-            <p id="songTitle">Song Title</p>
-            <p id="artist">Artist</p>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+    <link rel="icon" href="../assets/logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="stream.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="navbar-logo">
+          <img src="assets/logo.png" alt="Logo" />
+          <h1>Groover</h1>
         </div>
+
+        <div class="navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Streaming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Most Listened</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">My Library</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="content">
+      <button id="loginButton">Connect with Spotify</button>
+      <!-- Display song information -->
+      <div id="songInfo">
+        <img id="albumImage" src="" alt="Album Image" />
+        <div id="songDetails">
+          <b><p id="songTitle">Song Title</p></b>
+          <p id="artist">Artist</p>
+        </div>
+        <!-- Music timeline input -->
+        <input
+          class="song-sliders"
+          id="musicTimeline"
+          type="range"
+          min="0"
+          max="100"
+          step="1"
+          value="0"
+        />
+        <div class="controllerBar">
+          <button id="skipBackward">
+            <i class="bi bi-skip-backward-fill"></i>
+          </button>
+          <button id="togglePlay">
+            <i class="bi bi-play-circle-fill"></i>
+          </button>
+          <button id="skipForward">
+            <i class="bi bi-skip-forward-fill"></i>
+          </button>
+        </div>
+      </div>
     </div>
+
+    <footer>
+      <p>Powered By:</p>
+      <img
+        src="../assets/spotify_logo/Spotify_Logo_RGB_White.png"
+        alt="Spotify Logo"
+      />
+      <!-- Replace with your actual Spotify logo path -->
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://sdk.scdn.co/spotify-player.js"></script>
     <script src="spotify.js"></script>
-</body>
+  </body>
 </html>
