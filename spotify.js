@@ -1,5 +1,5 @@
-const clientId = '665f61d7eddc4a70a4f41cb82a5279cf';
-const redirectUri = 'http://localhost/spotify/stream.html'; // Must be set in your Spotify Developer Dashboard
+const clientId = '96cc031004a7414097ce16cec85c07e4';
+const redirectUri = 'http://localhost/front-end/stream.html'; // Must be set in your Spotify Developer Dashboard
 const scopes = 'streaming';
 
 $(document).ready(function () {

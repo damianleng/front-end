@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let offset = 0;
     const resultsContainer = $('#resultsContainer'); // Define resultsContainer outside of the function
-    const token = 'BQCbq2JjRs7s5cs7l4X7v7bdq111Qfs13AWlYHJ7IsilC6849ab607zUffa8JHrPMIHX53DrBRQu7E5O127xIa0VU3C7INWEZGPVio-C5VUIE0wXm-GHkBzJn1E2C0Or4mslFEXIJWy6EKKcA0zCyNn-RSimeSwF43CScBaxppiHdi5dvkpr5l0Wlv1aCmOaIaIsZWZYMBfoJyWWdPeHyTH_Ex9q';
+    const token = 'BQD0aLxmyQ-QcBjCIkD_3n-CXzM6F_Kcw78JzorWQyKWaQdB4-KEjoFeVfxuv_wntm8QXw6djwlnXRJW3CrnXRiorQ_Q7MrZU9swDJ3TnD5ajHVQ2PHHLRh8YwRF-iMRt8Jljo63aBL3Ep1DdSBGz0VBGxigtqtnOuktYfvIAxWlAwPKe_dKBke5tLOSJ1Jm7xN1YS59sXgVNknGnsCDWhDj40pVZsP0';
     
     function searchTracks() {
         const searchInput = $('#searchInput').val();
