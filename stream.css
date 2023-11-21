@@ -10,6 +10,7 @@ body {
 
 button {
   font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
   border: none;
   background-color: #191414;
 }
@@ -39,11 +40,16 @@ button {
   width: 100%;
 }
 
+#albumImage {
+  width: 100%;
+  height: auto;
+}
+
 #skipBackward,
 #togglePlay,
 #skipForward {
   color: #ffffff;
-  width: 1.5em;
+  width: 2em;
   height: auto;
 }
 
@@ -55,15 +61,12 @@ button {
   height: calc(100vh - 60px); /* Adjust as needed */
 }
 
-.navbar {
-  background-color: #221f1f;
-}
-
 .navbar-nav {
   display: flex;
   justify-content: space-around;
   width: 100%;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 .navbar-logo {
@@ -80,12 +83,13 @@ button {
 }
 
 footer {
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color: #221f1f;
-  color: #ffffff;
-  justify-content: flex-start;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background-color: #f8f9fa;
+  padding: 10px;
+  text-align: center;
 }
 
 footer img {

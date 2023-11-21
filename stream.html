@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="stream.css" />
   </head>
   <body>
-    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
         <div class="navbar-logo">
           <img src="assets/logo.png" alt="Logo" />
@@ -22,21 +22,23 @@
 
         <div class="navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                  <a class="nav-link" href="stream.html">Streaming</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="search.html">Search</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="mostListen.html">Most Listened</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="library.html">My Library</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link btn bg-success" id="loginButton">Login to Spotify</a>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="stream.html">Streaming</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="search.html">Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mostListen.html">Most Listened</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="library.html">My Library</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn bg-success" id="loginButton"
+                >Login to Spotify</a
+              >
+            </li>
           </ul>
         </div>
       </div>
@@ -44,9 +46,9 @@
     <div class="content">
       <!-- Display song information -->
       <div id="songInfo">
-        <img id="albumImage" src="" alt="Album Image" />
+        <img id="albumImage" src="" alt="Album Image" style="width: 100%" />
         <div id="songDetails">
-          <b><p id="songTitle">Song Title</p></b>
+          <b><p id="songTitle" style="font-weight: bold">Song Title</p></b>
           <p id="artist">Artist</p>
         </div>
         <!-- Music timeline input -->
@@ -73,13 +75,12 @@
       </div>
     </div>
 
-    <footer>
+    <footer style="position: fixed; bottom: 0; width: 100%">
       <p>Powered By:</p>
       <img
-        src="../assets/spotify_logo/Spotify_Logo_RGB_White.png"
+        src="assets\spotify_logo\Spotify_Logo_RGB_White.png"
         alt="Spotify Logo"
       />
-      <!-- Replace with your actual Spotify logo path -->
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://sdk.scdn.co/spotify-player.js"></script>
