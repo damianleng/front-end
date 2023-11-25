@@ -41,9 +41,9 @@ fetch(
       tracks.forEach((track) => {
         const imageUrl = track.album.images[0].url;
         output += `
-          <div style="background-color: #181818; text-align: center; padding: 5px; margin: 10px; flex: 1 0 20%; max-width: 20%;">
-            <img src="${imageUrl}" alt="Album cover" style="width: 100%; height: auto;">
-            <p style="color: white;">${track.name} by ${track.artists[0].name}</p>
+          <div class="mostListen-track">
+            <img src="${imageUrl}" class="mostListen-album" alt="Album cover">
+            <p class="mostListen-info"><strong>${track.name}</strong> <br> by ${track.artists[0].name}</p>
           </div>
         `;
       });

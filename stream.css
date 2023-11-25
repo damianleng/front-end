@@ -67,6 +67,32 @@ i.bi {
   margin-bottom: 20px;
 }
 
+.mostListen-track {
+  background-color: #161616;
+  text-align: center;
+  padding: 5%;
+  margin: 10px;
+  flex: 1 0 20%;
+  max-width: 30%;
+  border-radius: 10%;
+}
+
+.mostListen-track:hover {
+  background-color: #181818;
+}
+
+.mostListen-track img {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.mostListen-track p {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
 #searchButton {
   background-color: #1db954;
   border: none;
