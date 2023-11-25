@@ -50,11 +50,17 @@
     </nav>
 
     <div class="content">
-      <label for="searchInput">Search for a track:</label>
-
-      <input type="text" id="searchInput" style="width: 50%" />
-
-      <button id="searchButton" style="color: white">Search</button>
+      <div class="search-container">
+        <input
+          type="text"
+          id="searchInput"
+          class="form-control"
+          placeholder="Search for a track"
+        />
+        <button id="searchButton" class="btn btn-success">
+          <i class="bi bi-search"></i>
+        </button>
+      </div>
       <!-- Use jQuery to create a scrollable container -->
       <div
         id="resultsContainer"

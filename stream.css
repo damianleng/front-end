@@ -59,6 +59,43 @@ i.bi {
   height: calc(100vh - 60px); /* Adjust as needed */
 }
 
+.search-container {
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+#searchButton {
+  background-color: #1db954;
+  border: none;
+  margin-left: 10px;
+}
+
+.resultTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+.resultTable th,
+.resultTable td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.resultTable tr:nth-child(even) {
+  background-color: #262626;
+}
+.resultTable tr:hover {
+  background-color: #ddd;
+}
+.resultTable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4caf50;
+  color: white;
+}
+
 .navbar-nav {
   display: flex;
   justify-content: space-around;
