@@ -39,10 +39,11 @@ function displayPlaylists(url) {
 
         // Create a container for each playlist
         const playlistElement = $('<div class="playlist"></div>').css({
-          backgroundColor: "#181818",
+          backgroundColor: "#6141AC",
           textAlign: "center",
           padding: "10px",
-          margin: "10px",
+          margin: "5% 10%",
+          maxWidth: "100%",
         });
 
         // Append the playlist name to the playlist container
