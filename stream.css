@@ -16,11 +16,12 @@ button {
 }
 
 #songTitle {
-  font-size: 1em;
+  font-size: 1.5em;
+  padding-top: 5%;
 }
 
 #artist {
-  font-size: 0.8em;
+  font-size: 1em;
 }
 
 .controllerBar {
@@ -45,12 +46,9 @@ button {
   height: auto;
 }
 
-#skipBackward,
-#togglePlay,
-#skipForward {
+i.bi {
   color: #ffffff;
-  width: 2em;
-  height: auto;
+  font-size: 2em;
 }
 
 .content {
@@ -65,8 +63,13 @@ button {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  font-size: 1.5em;
+}
+
+a.nav-link {
+  font-size: 1em;
   font-weight: bold;
+  color: white; /* Add this line */
+  width: 100%;
 }
 
 .navbar-logo {
@@ -88,6 +91,8 @@ footer {
   left: 0;
   padding: 10px;
   text-align: start;
+  display: flex;
+  align-items: center;
 }
 
 footer img {

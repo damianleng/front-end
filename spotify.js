@@ -116,3 +116,11 @@ window.onSpotifyWebPlaybackSDKReady = () => {
 
   player.connect();
 };
+
+//toggle play button
+$(document).ready(function () {
+  $("#togglePlay").click(function () {
+    var icon = $(this).find("i");
+    icon.toggleClass("bi-play-circle-fill bi-pause-circle-fill");
+  });
+});
