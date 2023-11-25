@@ -93,6 +93,25 @@ i.bi {
   padding: 0;
 }
 
+.playlist {
+  background-color: #161616;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.playlistName {
+  font-weight: bold;
+  font-size: 3em;
+  color: white;
+}
+
+.playlist-tracks {
+  display: "flex";
+  flex-wrap: "wrap";
+  justify-content: "space-evenly";
+}
+
 #searchButton {
   background-color: #1db954;
   border: none;
